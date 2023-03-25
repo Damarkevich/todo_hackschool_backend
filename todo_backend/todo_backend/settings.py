@@ -13,7 +13,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'web', ]
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost']
+CSRF_TRUSTED_ORIGINS = ['http://158.160.49.18']
 
 INSTALLED_APPS = [
     'tasks.apps.TasksConfig',
