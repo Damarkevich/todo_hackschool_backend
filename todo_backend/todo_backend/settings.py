@@ -28,8 +28,8 @@ INSTALLED_APPS = [
 
     'rest_framework',
 ]
-#   'corsheaders',
-#   'corsheaders.middleware.CorsMiddleware',
+    'corsheaders',
+    'corsheaders.middleware.CorsMiddleware',
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
