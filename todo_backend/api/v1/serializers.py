@@ -3,14 +3,6 @@ from tasks.models import Task
 
 
 class TaskSerializer(serializers.ModelSerializer):
-    author = serializers.SlugRelatedField(
-        many=False,
-        slug_field='username'
-    )
-    assigned_to = serializers.SlugRelatedField(
-        many=False,
-        slug_field='username'
-    )
 
     class Meta:
         model = Task
