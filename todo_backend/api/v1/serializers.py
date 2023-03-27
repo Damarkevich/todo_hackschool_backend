@@ -6,11 +6,13 @@ from users.models import User
 class TaskSerializer(serializers.ModelSerializer):
     author = serializers.SlugRelatedField(
         queryset=User.objects.all(),
-        slug_field='username'
+        slug_field='username',
+        required=False,
     )
     assigned_to = serializers.SlugRelatedField(
         queryset=User.objects.all(),
-        slug_field='username'
+        slug_field='username',
+        required=False,
     )
 
     class Meta:
