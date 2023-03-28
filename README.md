@@ -1,2 +1,2 @@
 # todo_hackschool_backend
-new version 1
+new version 2
