@@ -26,4 +26,5 @@ class TaskSerializer(serializers.ModelSerializer):
             'author',
             'assigned_to',
             'completed',
+            'due_date',
         )
