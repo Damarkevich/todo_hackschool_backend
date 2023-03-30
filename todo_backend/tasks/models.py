@@ -28,7 +28,7 @@ class Task(models.Model):
         help_text='Enter task author'
     )
 
-    assigned_to = models.ManyToManyField(
+    assigned_to = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         blank=True,
