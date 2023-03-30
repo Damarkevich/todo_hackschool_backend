@@ -50,6 +50,7 @@ class Task(models.Model):
         verbose_name='Due date',
         db_index=True,
         default=timezone.now,
+        blank=True
         help_text='Enter due date',
     )
 

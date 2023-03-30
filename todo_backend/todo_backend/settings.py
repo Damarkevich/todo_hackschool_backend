@@ -12,9 +12,9 @@ SECRET_KEY = 'django-insecure-1z#04%@9_*hm1o)6(ps@nz+vfntr*ncg=6nrh4e)6xv++27%$p
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'web', ]
+ALLOWED_HOSTS = ['localhost', 'web', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['http://158.160.49.18']
+CSRF_TRUSTED_ORIGINS = ['http://158.160.49.18', 'http://127.0.0.1']
 
 INSTALLED_APPS = [
     'tasks.apps.TasksConfig',
@@ -66,9 +66,9 @@ DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE'),
         'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('POSTGRES_USER'),
+        'USER': "damarkevich", # os.getenv('POSTGRES_USER'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
+        'HOST': 'localhost', #os.getenv('DB_HOST'),
         'PORT': os.getenv('DB_PORT')
     }
 }
