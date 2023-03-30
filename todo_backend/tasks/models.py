@@ -49,7 +49,7 @@ class Task(models.Model):
     due_date = models.DateTimeField(
         verbose_name='Due date',
         db_index=True,
-        default=timezone.now(),
+        default=timezone.now,
         help_text='Enter due date',
     )
 
