@@ -45,6 +45,12 @@ class Task(models.Model):
         help_text='Enter creation date',
     )
 
+    due_date = models.DateTimeField(
+        verbose_name='Due date',
+        db_index=True,
+        help_text='Enter due date',
+    )
+
     image = models.ImageField(
         'Image',
         upload_to='media/tasks/',
