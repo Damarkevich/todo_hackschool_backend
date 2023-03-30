@@ -1,5 +1,6 @@
 from django.db import models
 from users.models import User
+from django.utils import timezone
 
 
 class Task(models.Model):
@@ -48,6 +49,7 @@ class Task(models.Model):
     due_date = models.DateTimeField(
         verbose_name='Due date',
         db_index=True,
+        default=timezone.now()
         help_text='Enter due date',
     )
 
