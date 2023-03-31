@@ -68,4 +68,4 @@ class Task(models.Model):
     class Meta:
         verbose_name = 'Task'
         verbose_name_plural = 'Tasks'
-        ordering = ['-pub_date']
+        ordering = ['-due_date']
